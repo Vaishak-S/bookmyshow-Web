@@ -29,8 +29,8 @@ const EntertainmentCardSlider = () =>{
     const settings = {
         infinite:false,
         autoplay:false,
-        slidesToShow:4,
-        slidestoScroll:4,
+        slidesToShow:5,
+        slidestoScroll:2,
         InitialSlide:0,
         responsive: [
             {
@@ -42,15 +42,24 @@ const EntertainmentCardSlider = () =>{
             },    
         },
         {
+            breakpoints:600,
+            settings: 
+            {
+                slidesToShow:2,
+                slidestoScroll:1,
+                InitialSlide:1,
+            },
+        },
+        {
             breakpoints:480,
             settings: 
             {
                 slidesToShow:2,
                 slidestoScroll:1,
             },
-        }
+        },
     ],
-    }
+    };
     
     return (
         <>
